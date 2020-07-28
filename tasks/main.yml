@@ -1,2 +1,23 @@
 ---
-# tasks file for template
+- name: Ensure ProFTPD is installed.
+  package:
+    name: "{{ proftpd_package }}"
+    state: present
+  tags:
+    - packages
+
+- name: Ensure ProFTPD modules are installed.
+  package:
+    name: "{{ proftpd_modules }}"
+    state: present
+  tags:
+    - packages
+
+- name: Ensure ProFTPD is started and enabled at boot.
+  service:
+    name: "{{ proftpd_service }}"
+    state: started
+    enabled: true
+  tags:
+    - configuration
+    - policy

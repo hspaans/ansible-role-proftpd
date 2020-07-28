@@ -1,2 +1,4 @@
 ---
-# defaults file for template
+proftpd_packages: proftpd
+proftpd_modules: []
+proftpd_service: proftpd.service

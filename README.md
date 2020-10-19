@@ -22,9 +22,11 @@ No dependency on other Ansible Galaxy roles.
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - { role: hspaans.proftpd, become: true }
+```yaml
+- hosts: servers
+  roles:
+    - { role: hspaans.proftpd, become: true }
+```
 
 License
 -------

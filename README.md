@@ -11,7 +11,8 @@ None.
 Role Variables
 --------------
 
-Default variables are set in `defaults/main.yml` to match the WP-CLI and role version.
+Default variables are set in `defaults/main.yml` to match the WP-CLI and
+role version.
 
 Dependencies
 ------------
@@ -34,3 +35,4 @@ Author Information
 ------------------
 
 This role was created in 2020 by [Hans Spaans](https://github.com/hspaans).
+

@@ -34,8 +34,6 @@ jobs:
           - "ansible==2.9.*"
           - "ansible-base==2.10.*"
         distro:
-          - centos7
-          - centos8
           - debian9
           - debian10
           - ubuntu1804

@@ -12,5 +12,7 @@
   tasks:
     - name: Remove packages
       package:
-        name: proftpd
+        name:
+          - proftpd-basic
+          - proftpd-core
         state: absent

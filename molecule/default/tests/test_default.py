@@ -3,7 +3,7 @@
 import pytest
 
 
-@pytest.mark.parametrize("pkg", ["proftpd-basic"])
+@pytest.mark.parametrize("pkg", ["proftpd"])
 def test_pkg_installed(host, pkg):
     package = host.package(pkg)
 

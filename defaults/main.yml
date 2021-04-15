@@ -1,4 +1,4 @@
 ---
-proftpd_package: proftpd-basic
+proftpd_package: proftpd
 proftpd_modules: []
 proftpd_service: proftpd.service

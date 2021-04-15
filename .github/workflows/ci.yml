@@ -37,6 +37,8 @@ jobs:
         distro:
           - debian:10
           - debian:11
+          - fedora:33
+          - fedora:34
           - ubuntu:20.04
 
     steps:

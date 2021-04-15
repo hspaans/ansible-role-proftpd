@@ -35,9 +35,9 @@ jobs:
           - "ansible==2.10.*"
           - "ansible==3.*"
         distro:
-          - debian10
-          - debian11
-          - ubuntu2004
+          - debian:10
+          - debian:11
+          - ubuntu:20.04
 
     steps:
       - name: Check out the codebase
@@ -54,7 +54,8 @@ jobs:
           pip3 install -r requirements.txt
 
       - name: Run Molecule tests
-        run: molecule test -s ${{ matrix.distro }}
+        run: molecule test
         env:
           PY_COLORS: "1"
           ANSIBLE_FORCE_COLOR: "1"
+          MOLECULE_DISTRO: ${{ matrix.distro }}

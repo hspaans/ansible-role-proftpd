@@ -11,7 +11,12 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
-        - all
+        - buster
+        - bullseye
+    - name: Ubuntu
+      versions:
+        - focal
+
 
   galaxy_tags:
     - ftp
